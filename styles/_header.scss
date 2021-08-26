@@ -1,0 +1,128 @@
+header{
+    color: var(--white);
+    background-image: url('../images/bg-pattern-intro.svg'),
+                      linear-gradient(120deg,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-bottom-left-radius: var(--border-radius);
+    padding: 3rem 8rem;
+    text-align: center;
+    font-family: 'Overpass',sans-serif;
+    nav{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        li{
+            list-style: none;
+        }     
+    }
+
+    .navbar{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        .nav-menu{
+            margin-right: 25px;
+            position: relative;
+            cursor: pointer;
+
+            .navbar__items{
+                display: none;
+                // margin-top: 0.5rem;
+                border-radius: 0.4rem;
+                margin-top: 5px;
+                padding: 10px 0;
+                padding-left: 10px;
+                text-align: left;
+                background-color: var(--white);
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 85px;
+                a{  
+                    text-decoration: none;
+                    color: rgba(black,0.8);
+                    font-size: 12px;
+                    &:hover{
+                        color: rgba(black,1);
+                        font-weight: bolder;
+                    }
+                }
+                
+            }
+            .login{
+                display: flex;
+            }
+
+            .drop{
+                    display: block;
+            }
+        
+            &:hover{
+                text-decoration: underline;
+                
+
+            }
+            .mobile{
+                display: none;
+            }
+        }
+
+    }
+
+    
+    .btn{
+        margin-left: 10px;
+        outline: none;
+        border-radius: 1.2rem;
+        border: none;
+        padding: 0.6rem 1.75rem;
+        background-color: transparent;
+        color: var(--white);
+        font-family: 'Ubuntu',sans-serif;
+        font-weight: bolder;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: none;
+            background-color: var(--red);
+            color: var(--white);
+            transition: all ease-in-out 300ms;
+        }
+
+        &--active{
+            background-color: var(--white);
+            color: var(--red);
+        }
+        &--info{
+            border: 1px solid  var(--white);
+            margin-left: 1rem;
+        }
+    }
+
+    .menu{
+        display: none;  
+    }   
+    
+
+    select{
+        font-family: 'Ubuntu';
+        background-color: transparent;
+        width: 100%;
+        outline: none;
+        border: 0;
+        color: var(--white);
+    }
+
+    h1{
+        margin-top: 3em;
+    }
+
+    p{
+        margin: 0.7rem 0;
+    }
+
+}

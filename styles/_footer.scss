@@ -1,0 +1,36 @@
+footer{
+    height: 50vh;
+    background-color: hsl(240, 10%, 16%);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-top-right-radius: var(--border-radius);
+    padding-top: 5rem;
+    img{
+        height: 50px;
+    }
+    .footer__info{
+        span{
+            padding-bottom: 1rem;
+        }
+        label{
+            color: var(--white);
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            li{
+                margin: 0.8rem 0;
+            }
+            a{
+                text-decoration: none;
+                color: var(--grey);
+                opacity: 0.8;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
